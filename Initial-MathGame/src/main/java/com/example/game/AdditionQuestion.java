@@ -9,10 +9,11 @@ public class AdditionQuestion {
     }
 
     public int getCorrectAnswer() {
+        return 0;
 
     }
 
     public boolean isGuessCorrect(int guess) {
-
+        return false;
     }
 }
