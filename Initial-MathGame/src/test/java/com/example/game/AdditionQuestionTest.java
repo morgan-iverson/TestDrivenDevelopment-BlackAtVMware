@@ -12,19 +12,4 @@ public class AdditionQuestionTest {
         //then:
     }
 
-    @Test
-    @DisplayName("")
-    void returnsTrueWhenGuessIsCorrect() {
-        //given:
-        //when:
-        //then:
-    }
-
-    @Test
-    @DisplayName("")
-    void returnsFalseWhenGuessIsNotCorrect() {
-        //given:
-        //when:
-        //then:
-    }
 }
