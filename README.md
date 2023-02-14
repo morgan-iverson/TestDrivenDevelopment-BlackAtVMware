@@ -5,11 +5,13 @@ This repository contains the code for the Black@VMware Black Heritage Month Test
 
 This project will be used develop the backend of a bug free addition game!
 
-During this session, we will cover software testing methods.
+The session cover software testing methods.
+[See workshop deck](docs/TDD-for-Black-At-VMware.pdf) 
 
-We will discuss challenges with building bug-free software with previous testing approaches.
-We will provide an overview of Test-Driven-Development (TDD) and explain how it helps.
-We will demonstrate building a math game using TDD.
+- Discuss challenges with building bug-free software with previous testing approaches.
+- Provide an overview of Test-Driven-Development (TDD) and explain how it helps.
+- Demonstrate building a math game using TDD.
+
 Students should be familiar with a minimum of 1 programming language’s basic concept.
 These concepts should include objects, variables, methods, and if-then-else logic.
 
