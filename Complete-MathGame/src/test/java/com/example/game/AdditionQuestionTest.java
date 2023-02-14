@@ -3,6 +3,7 @@ package com.example.game;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AdditionQuestionTest {
@@ -13,15 +14,10 @@ public class AdditionQuestionTest {
         //when: Check is guess correct for addition question -- isGuessCorrect(guess)
         //then: We expect true because the guess is correct
 
-        int number1 = 1;
-        int number2 = 2;
-        AdditionQuestion subject = new AdditionQuestion(number1, number2);
+        AdditionQuestion subject = new AdditionQuestion(1, 2);
         int guess = 3;
 
-        boolean actualResponse = subject.isGuessCorrect(guess);
-        boolean expectedResponse = true;
-
-        assertEquals(actualResponse, expectedResponse);
+        assertThat(subject.isGuessCorrect(guess)).isTrue();
     }
 
     @Test
@@ -31,14 +27,9 @@ public class AdditionQuestionTest {
         //when: Check is guess correct for addition question -- isGuessCorrect(guess)
         //then: We expect false because the guess is not correct
 
-        int number1 = 1;
-        int number2 = 2;
-        AdditionQuestion subject = new AdditionQuestion(number1, number2);
+        AdditionQuestion subject = new AdditionQuestion(1, 2);
         int guess = 5;
 
-        boolean actualResponse = subject.isGuessCorrect(guess);
-        boolean expectedResponse = false;
-
-        assertEquals(actualResponse, expectedResponse);
+        assertThat(subject.isGuessCorrect(guess)).isFalse();
     }
 }
